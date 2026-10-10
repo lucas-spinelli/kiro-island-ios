@@ -2,7 +2,7 @@
 
 Destino solicitado: **iPhone 17 con iOS 27**. Proyecto SwiftUI + ActivityKit, con un mínimo de iOS 17 y APIs públicas. Puede compilarse con Xcode en un equipo propio o en un equipo macOS estándar de GitHub, y firmarse desde Windows.
 
-**Es código fuente para probar en Xcode. No es una app instalada ni una IPA firmada.** En Windows se revisaron la estructura del proyecto y la maqueta; falta compilar y probar el comportamiento en el iPhone.
+**La app y su extensión ya compilaron correctamente para iPhone.** La [compilación verificada](https://github.com/lucas-spinelli/kiro-island-ios/actions/runs/38082331144) usó Xcode 26.6 y produjo una IPA arm64 de 168.269 bytes, sin firma. Falta firmarla con tu cuenta Apple e instalarla para probar el comportamiento real. `COMPILACION.json` conserva la versión de Xcode, el commit y la huella SHA-256 del resultado.
 
 **Si no tenés una Mac, seguí [SIN-MAC.md](SIN-MAC.md)**: el flujo incluido compila en GitHub y genera una IPA sin firmar para instalación local desde Windows con una cuenta Apple gratuita.
 
@@ -50,9 +50,11 @@ Kiro usa una actividad propia. Si Spotify, Música u otra app ocupan la isla, iO
 
 La maqueta `Vista-previa.html` permite revisar el diseño con controles simulados. No instala la app, no detecta eventos del iPhone y no prueba las APIs nativas.
 
-## Validación pendiente en Xcode
+## Validación realizada y pruebas pendientes
 
-Compilar ambos targets; iniciar/actualizar/finalizar una sesión; probar Atajos con la app suspendida; revisar coexistencia con reproducción real; probar Reduced Motion, Always-On, VoiceOver y señales de datos protegidos; medir energía en Instruments. Revisar `VALIDACION.json` para distinguir las comprobaciones realizadas.
+Se compilaron ambos targets y se verificaron los ejecutables arm64, la extensión embebida y la integridad de la IPA. También se revisaron la estructura del proyecto y los controles de la maqueta HTML.
+
+En el iPhone falta iniciar/actualizar/finalizar una sesión; probar Atajos con la app suspendida; revisar coexistencia con reproducción real; probar Reducir movimiento, Always-On, VoiceOver y señales de datos protegidos. La medición de energía en Instruments requiere una Mac y no forma parte de la ruta gratuita desde Windows. `VALIDACION.json` distingue las comprobaciones realizadas de las pendientes; la compilación no demuestra consumo de batería ni funcionamiento en el dispositivo.
 
 ## Referencias oficiales
 

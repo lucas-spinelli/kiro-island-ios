@@ -1,0 +1,32 @@
+{
+  "sourceFiles": 7,
+  "projectObjects": 45,
+  "checks": [
+    "target graph",
+    "embedded widget dependency",
+    "source paths",
+    "XML plists",
+    "shared scheme",
+    "no background modes",
+    "no frequent updates",
+    "no frame clock or polling"
+  ],
+  "nativeCompilation": {
+    "status": "Succeeded on GitHub macos-26",
+    "run": "https://github.com/lucas-spinelli/kiro-island-ios/actions/runs/38082331144",
+    "xcode": "Xcode 26.6\nBuild version 17F113",
+    "sourceCommit": "59ecd5b2615a81e5083ac27596786788be70c707",
+    "targets": [
+      "KiroIsland",
+      "KiroWidget"
+    ],
+    "architectures": {
+      "app": "arm64",
+      "widget": "arm64"
+    },
+    "ipaSha256Verified": true,
+    "signed": false
+  },
+  "deviceValidation": "Pending on iPhone 17 with iOS 27",
+  "batteryMeasurement": "Pending on physical device; no percentage claim"
+}

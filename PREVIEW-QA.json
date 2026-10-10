@@ -1,0 +1,15 @@
+{
+  "scope": "HTML design mock-up only, not the native app",
+  "verified": [
+    "Music button selects music pose",
+    "Expanded presentation exposes greeting, music and sleep controls",
+    "Minimal presentation displays a separate character bubble",
+    "Simulated lock selects question pose",
+    "Dimmed Always-On simulation disables glyph animations",
+    "Disabling the Reduce Motion checkbox while dimmed does not restart animation",
+    "No horizontal overflow at the browser's default desktop viewport",
+    "No browser console errors observed"
+  ],
+  "nativeValidation": "See VALIDACION.json and COMPILACION.json; HTML checks do not validate the native app",
+  "physicalDeviceBatteryMeasurement": "Not performed"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Kiro Island",
+  "bundleIdentifier": "com.lucki.kiroisland",
+  "extensionBundleIdentifier": "com.lucki.kiroisland.widget",
+  "minimumOSVersion": "17.0",
+  "architectures": {
+    "app": "arm64",
+    "widget": "arm64"
+  },
+  "sourceCommit": "59ecd5b2615a81e5083ac27596786788be70c707",
+  "workflowRun": "38082331144",
+  "xcode": "Xcode 26.6\nBuild version 17F113",
+  "sha256": "3e110639a0cea899003fef11f23004ea6e1dbfbe43cf2dd95dad3d42e464025e",
+  "bytes": 168269,
+  "signed": false,
+  "deviceTested": false,
+  "installation": "Sign locally with a free Apple Account. Keep the WidgetKit extension."
+}

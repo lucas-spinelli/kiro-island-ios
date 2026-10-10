@@ -1,5 +1,7 @@
 # Ruta gratuita desde Windows
 
+La app y `KiroWidget` ya compilaron en [GitHub](https://github.com/lucas-spinelli/kiro-island-ios/actions/runs/38082331144), con Xcode 26.6. La IPA arm64 resultante pesa 168.269 bytes y está sin firmar. El [repositorio público](https://github.com/lucas-spinelli/kiro-island-ios) permite repetir el proceso sin una Mac propia.
+
 ## Compilar
 
 Este proyecto incorpora `.github/workflows/build-ios.yml`. El flujo sólo se ejecuta manualmente y sólo en un **repositorio público**, usando el equipo estándar `macos-26`. No utiliza equipos grandes, caché, Git LFS, paquetes ni almacenamiento de artefactos de Actions.
