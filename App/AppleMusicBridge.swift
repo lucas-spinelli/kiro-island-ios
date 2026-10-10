@@ -21,7 +21,7 @@ final class AppleMusicBridge: ObservableObject {
         guard enabled, observation == nil else { return }
         let player = MPMusicPlayerController.systemMusicPlayer
         player.beginGeneratingPlaybackNotifications()
-        observation = NotificationCenter.default.publisher(for: MPMusicPlayerController.playbackStateDidChangeNotification,
+        observation = NotificationCenter.default.publisher(for: .MPMusicPlayerControllerPlaybackStateDidChange,
                                                           object: player)
             .receive(on: DispatchQueue.main)
             .sink { _ in
