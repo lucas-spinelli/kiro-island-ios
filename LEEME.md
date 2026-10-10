@@ -2,7 +2,7 @@
 
 Destino solicitado: **iPhone 17 con iOS 27**. Proyecto SwiftUI + ActivityKit, con un mínimo de iOS 17 y APIs públicas. Puede compilarse con Xcode en un equipo propio o en un equipo macOS estándar de GitHub, y firmarse desde Windows.
 
-**La app y su extensión ya compilaron correctamente para iPhone.** La [compilación verificada](https://github.com/lucas-spinelli/kiro-island-ios/actions/runs/38082331144) usó Xcode 26.6 y produjo una IPA arm64 de 168.269 bytes, sin firma. Falta firmarla con tu cuenta Apple e instalarla para probar el comportamiento real. `COMPILACION.json` conserva la versión de Xcode, el commit y la huella SHA-256 del resultado.
+**La app y su extensión ya compilaron correctamente para iPhone.** La [compilación verificada](https://github.com/lucas-spinelli/kiro-island-ios/actions/runs/38082331144) usó Xcode 26.6 y produjo una IPA arm64 de 168.269 bytes, sin firma. La IPA de descarga se firma localmente con una cuenta Apple para instalarla. El funcionamiento real debe comprobarse en el iPhone; `COMPILACION.json` conserva la versión de Xcode, el commit y la huella SHA-256 del resultado.
 
 **Si no tenés una Mac, seguí [SIN-MAC.md](SIN-MAC.md)**: el flujo incluido compila en GitHub y genera una IPA sin firmar para instalación local desde Windows con una cuenta Apple gratuita.
 

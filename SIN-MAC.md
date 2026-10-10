@@ -17,7 +17,7 @@ La cuenta Apple y la firma quedan fuera de GitHub. El flujo no requiere suscripc
 3. Conectá el iPhone por USB y aceptá **Confiar** en el teléfono.
 4. Iniciá sesión en iloader con tu cuenta Apple gratuita. Ingresá la contraseña y la verificación directamente en la herramienta, no en el chat ni en GitHub.
 5. Instalá la IPA como una aplicación normal, **conservando la extensión `KiroWidget.appex`** y su perfil individual. No uses un contenedor de otras apps para esta prueba.
-6. Completá en el iPhone los pasos que solicite iOS para confiar en la app de desarrollo y habilitar Developer Mode. Estas acciones requieren tu intervención física.
+6. Si iOS bloquea la apertura, entrá en **Ajustes → General → VPN y gestión de dispositivos** (puede decir «administración»). En **App del desarrollador**, elegí la cuenta Apple usada para firmar y completá **Confiar / Permitir y reiniciar**, según el aviso. Si solicita modo desarrollador, entrá en **Ajustes → Privacidad y seguridad → Modo desarrollador**, activalo y completá el reinicio y la confirmación en el iPhone. Estas acciones requieren tu intervención física.
 7. Abrí Kiro y activá la sesión en la isla. Probá también con la música del iPhone ocupando la isla.
 
 La compatibilidad final con tu versión de iOS y con la firma de la extensión debe comprobarse al instalar. Preparar el instalador no demuestra que una IPA ya esté instalada.
@@ -42,4 +42,6 @@ Esta ruta elimina la necesidad de tener una Mac. Las restricciones de iOS sobre 
 - [Descargas de releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)
 - [Cuenta Apple gratuita y vencimiento](https://developer.apple.com/help/account/basics/about-your-developer-account/)
 - [Preparación en Windows](https://docs.sidestore.io/docs/installation/prerequisites)
+- [Confianza y primer inicio con iloader](https://docs.sidestore.io/docs/installation/install)
+- [Modo desarrollador en el iPhone](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device)
 - [iloader y sus descargas oficiales](https://github.com/nab138/iloader)
