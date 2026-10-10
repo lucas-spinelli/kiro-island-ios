@@ -18,8 +18,8 @@ jobs:
     runs-on: macos-26
     timeout-minutes: 20
     env:
-      DERIVED_DATA: ${{ runner.temp }}/kiro-derived
-      KIROID_OUT: ${{ runner.temp }}/kiro-package
+      DERIVED_DATA: build/kiro-derived
+      KIROID_OUT: build/kiro-package
     steps:
       - name: Check out the reviewed source
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
