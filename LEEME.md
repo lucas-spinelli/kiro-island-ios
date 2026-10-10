@@ -28,9 +28,11 @@ No necesita servidor, claves de API ni paquetes externos. También se puede comp
 
 ## Conectar Spotify y Apple Music con Atajos
 
-En **Atajos → Automatización**, creá una automatización de **App → Se abre** y elegí Spotify o Música. Agregá la acción **Cambiar emoción de Kiro**, seleccioná **Música** y configurá la ejecución automática si tu sistema ofrece esa opción.
+En iOS 27, creá un atajo con la acción **Cambiar emoción de Kiro** y seleccioná **Música**. Desde **Editar → Automatización**, agregá el activador **App → Se abre** y elegí Spotify o Música. Guardá el atajo y probalo al abrir esa app. En versiones anteriores, la creación puede estar en **Atajos → Automatización**.
 
 Esto activa la pose al **abrir la app**, aunque todavía no esté sonando música. No confirma reproducción ni sigue pausas o cambios de canción. No uses «Se cierra» para asumir que dejó de sonar: puede seguir reproduciendo en segundo plano.
+
+La configuración detallada y la renovación están en [USAR-KIRO.md](USAR-KIRO.md). Las automatizaciones personales se crean en el iPhone; no están configuradas por instalar la IPA.
 
 Para Apple Music podés conectar el permiso en Kiro y usar **Consultar Apple Music para Kiro** en un atajo. La lectura refleja sólo ese momento; si empezás a reproducir después, ejecutá el atajo de nuevo. Spotify no tiene lectura real de reproducción en esta base.
 
@@ -54,7 +56,7 @@ La maqueta `Vista-previa.html` permite revisar el diseño con controles simulado
 
 Se compilaron ambos targets y se verificaron los ejecutables arm64, la extensión embebida y la integridad de la IPA. También se revisaron la estructura del proyecto y los controles de la maqueta HTML.
 
-En el iPhone falta iniciar/actualizar/finalizar una sesión; probar Atajos con la app suspendida; revisar coexistencia con reproducción real; probar Reducir movimiento, Always-On, VoiceOver y señales de datos protegidos. La medición de energía en Instruments requiere una Mac y no forma parte de la ruta gratuita desde Windows. `VALIDACION.json` distingue las comprobaciones realizadas de las pendientes; la compilación no demuestra consumo de batería ni funcionamiento en el dispositivo.
+El usuario confirmó el primer inicio y la aparición de Kiro en la Dynamic Island de su iPhone. Falta validar actualización y finalización de sesiones; probar Atajos con la app suspendida; revisar coexistencia con reproducción real; probar Reducir movimiento, Always-On, VoiceOver y señales de datos protegidos. La automatización de música se dejó para después por elección del usuario. La medición de energía en Instruments requiere una Mac y no forma parte de la ruta gratuita desde Windows. `VALIDACION.json` distingue las comprobaciones realizadas de las pendientes; la compilación por sí sola no demuestra consumo de batería ni funcionamiento en el dispositivo.
 
 ## Referencias oficiales
 
@@ -64,4 +66,5 @@ En el iPhone falta iniciar/actualizar/finalizar una sesión; probar Atajos con l
 - [Protección de datos](https://developer.apple.com/documentation/uikit/uiapplication/isprotecteddataavailable)
 - [Reproductor del sistema de Apple Music](https://developer.apple.com/documentation/mediaplayer/mpmusicplayercontroller/systemmusicplayer)
 - [Eventos de Atajos](https://support.apple.com/guide/shortcuts/setting-triggers-apde31e9638b/ios)
+- [Agregar automatizaciones en iOS 27](https://support.apple.com/en-euro/guide/shortcuts/apdfbdbd7123/10.0/ios/27)
 - [Ciclo de vida del SDK de Spotify](https://developer.spotify.com/documentation/ios/concepts/application-lifecycle)

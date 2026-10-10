@@ -27,6 +27,13 @@
     "ipaSha256Verified": true,
     "signed": false
   },
-  "deviceValidation": "Pending on iPhone 17 with iOS 27",
+  "deviceValidation": {
+    "appLaunch": "Confirmed by the user on the iPhone",
+    "dynamicIsland": "Confirmed by the user on the iPhone",
+    "developerTrustAndMode": "Sufficient for launch, inferred from the user's successful launch confirmation",
+    "shortcutMusicAutomation": "Deferred by the user; not configured or validated",
+    "interactiveIslandControls": "Not verified on the physical device",
+    "appleMusicPlayback": "Not verified on the physical device"
+  },
   "batteryMeasurement": "Pending on physical device; no percentage claim"
 }
