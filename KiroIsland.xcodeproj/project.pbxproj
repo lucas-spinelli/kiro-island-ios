@@ -1,0 +1,362 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+		000000000000000000000064 = {
+			isa = PBXFileReference;
+			lastKnownFileType = "sourcecode.swift";
+			path = "Shared/KiroAttributes.swift";
+			sourceTree = "<group>";
+		};
+		000000000000000000000065 = {
+			isa = PBXFileReference;
+			lastKnownFileType = "sourcecode.swift";
+			path = "Shared/KiroAvatar.swift";
+			sourceTree = "<group>";
+		};
+		000000000000000000000066 = {
+			isa = PBXFileReference;
+			lastKnownFileType = "sourcecode.swift";
+			path = "Shared/KiroIntents.swift";
+			sourceTree = "<group>";
+		};
+		000000000000000000000067 = {
+			isa = PBXFileReference;
+			lastKnownFileType = "sourcecode.swift";
+			path = "App/KiroActivityCoordinator.swift";
+			sourceTree = "<group>";
+		};
+		000000000000000000000068 = {
+			isa = PBXFileReference;
+			lastKnownFileType = "sourcecode.swift";
+			path = "App/AppleMusicBridge.swift";
+			sourceTree = "<group>";
+		};
+		000000000000000000000069 = {
+			isa = PBXFileReference;
+			lastKnownFileType = "sourcecode.swift";
+			path = "App/KiroIslandApp.swift";
+			sourceTree = "<group>";
+		};
+		00000000000000000000006A = {
+			isa = PBXFileReference;
+			lastKnownFileType = "sourcecode.swift";
+			path = "Widget/KiroLiveActivity.swift";
+			sourceTree = "<group>";
+		};
+		000000000000000000000078 = {
+			isa = PBXFileReference;
+			explicitFileType = "wrapper.application";
+			path = "KiroIsland.app";
+			sourceTree = BUILT_PRODUCTS_DIR;
+			includeInIndex = 0;
+		};
+		000000000000000000000079 = {
+			isa = PBXFileReference;
+			explicitFileType = "wrapper.app-extension";
+			path = "KiroWidget.appex";
+			sourceTree = BUILT_PRODUCTS_DIR;
+			includeInIndex = 0;
+		};
+		00000000000000000000007A = {
+			isa = PBXFileReference;
+			lastKnownFileType = "text.plist.xml";
+			path = "App/Info.plist";
+			sourceTree = "<group>";
+		};
+		00000000000000000000007B = {
+			isa = PBXFileReference;
+			lastKnownFileType = "text.plist.xml";
+			path = "Widget/Info.plist";
+			sourceTree = "<group>";
+		};
+		000000000000000000000082 = {
+			isa = PBXGroup;
+			children = (000000000000000000000078, 000000000000000000000079);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000000000000000083 = {
+			isa = PBXGroup;
+			children = (000000000000000000000064, 000000000000000000000065, 000000000000000000000066, 000000000000000000000067, 000000000000000000000068, 000000000000000000000069, 00000000000000000000006A, 00000000000000000000007A, 00000000000000000000007B, 000000000000000000000082);
+			sourceTree = "<group>";
+		};
+		0000000000000000000000C8 = {
+			isa = PBXBuildFile;
+			fileRef = 000000000000000000000064;
+		};
+		0000000000000000000000C9 = {
+			isa = PBXBuildFile;
+			fileRef = 000000000000000000000065;
+		};
+		0000000000000000000000CA = {
+			isa = PBXBuildFile;
+			fileRef = 000000000000000000000066;
+		};
+		0000000000000000000000CB = {
+			isa = PBXBuildFile;
+			fileRef = 000000000000000000000067;
+		};
+		0000000000000000000000CC = {
+			isa = PBXBuildFile;
+			fileRef = 000000000000000000000068;
+		};
+		0000000000000000000000CD = {
+			isa = PBXBuildFile;
+			fileRef = 000000000000000000000069;
+		};
+		0000000000000000000000DC = {
+			isa = PBXBuildFile;
+			fileRef = 000000000000000000000064;
+		};
+		0000000000000000000000DD = {
+			isa = PBXBuildFile;
+			fileRef = 000000000000000000000065;
+		};
+		0000000000000000000000DE = {
+			isa = PBXBuildFile;
+			fileRef = 000000000000000000000066;
+		};
+		0000000000000000000000DF = {
+			isa = PBXBuildFile;
+			fileRef = 00000000000000000000006A;
+		};
+		00000000000000000000012C = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (0000000000000000000000C8, 0000000000000000000000C9, 0000000000000000000000CA, 0000000000000000000000CB, 0000000000000000000000CC, 0000000000000000000000CD);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00000000000000000000012D = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (0000000000000000000000DC, 0000000000000000000000DD, 0000000000000000000000DE, 0000000000000000000000DF);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00000000000000000000012E = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00000000000000000000012F = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000130 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000131 = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000132 = {
+			isa = PBXBuildFile;
+			fileRef = 000000000000000000000079;
+			settings = {
+				ATTRIBUTES = (RemoveHeadersOnCopy);
+			};
+		};
+		000000000000000000000133 = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			name = "Embed App Extensions";
+			files = (000000000000000000000132);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000134 = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000001;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000000000000000191;
+			remoteInfo = KiroWidget;
+		};
+		000000000000000000000135 = {
+			isa = PBXTargetDependency;
+			target = 000000000000000000000191;
+			targetProxy = 000000000000000000000134;
+		};
+		0000000000000000000001F4 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+				SWIFT_VERSION = "5.0";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)");
+				DEBUG_INFORMATION_FORMAT = dwarf;
+			};
+			name = Debug;
+		};
+		0000000000000000000001F5 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = "17.0";
+				SWIFT_VERSION = "5.0";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				GCC_PREPROCESSOR_DEFINITIONS = ("$(inherited)");
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+			};
+			name = Release;
+		};
+		000000000000000000000226 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (0000000000000000000001F4, 0000000000000000000001F5);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0000000000000000000001FE = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucki.kiroisland";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+			};
+			name = Debug;
+		};
+		0000000000000000000001FF = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucki.kiroisland";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+			};
+			name = Release;
+		};
+		000000000000000000000227 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (0000000000000000000001FE, 0000000000000000000001FF);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000208 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Widget/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucki.kiroisland.widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks");
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = ("$(inherited)", KIRO_WIDGET);
+			};
+			name = Debug;
+		};
+		000000000000000000000209 = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Widget/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucki.kiroisland.widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks", "@executable_path/../../Frameworks");
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = ("$(inherited)", KIRO_WIDGET);
+			};
+			name = Release;
+		};
+		000000000000000000000228 = {
+			isa = XCConfigurationList;
+			buildConfigurations = (000000000000000000000208, 000000000000000000000209);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000190 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000227;
+			buildPhases = (00000000000000000000012C, 00000000000000000000012E, 000000000000000000000130, 000000000000000000000133);
+			buildRules = ();
+			dependencies = (000000000000000000000135);
+			name = KiroIsland;
+			productName = KiroIsland;
+			productReference = 000000000000000000000078;
+			productType = "com.apple.product-type.application";
+		};
+		000000000000000000000191 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000228;
+			buildPhases = (00000000000000000000012D, 00000000000000000000012F, 000000000000000000000131);
+			buildRules = ();
+			dependencies = ();
+			name = KiroWidget;
+			productName = KiroWidget;
+			productReference = 000000000000000000000079;
+			productType = "com.apple.product-type.app-extension";
+		};
+		000000000000000000000001 = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = "1600";
+				TargetAttributes = {
+					000000000000000000000190 = {
+						CreatedOnToolsVersion = "16.0";
+					};
+					000000000000000000000191 = {
+						CreatedOnToolsVersion = "16.0";
+					};
+				};
+			};
+			buildConfigurationList = 000000000000000000000226;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = es;
+			hasScannedForEncodings = 0;
+			knownRegions = (es, en, Base);
+			mainGroup = 000000000000000000000083;
+			productRefGroup = 000000000000000000000082;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (000000000000000000000190, 000000000000000000000191);
+		};
+	};
+	rootObject = 000000000000000000000001;
+}

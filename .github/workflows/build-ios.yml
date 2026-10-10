@@ -1,0 +1,68 @@
+name: Build Kiro for iPhone
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: kiro-iphone-build
+  cancel-in-progress: false
+
+jobs:
+  build:
+    # Standard macOS runner minutes are free for public repositories.
+    # Refuse private-repository execution rather than spend paid minutes.
+    if: github.event.repository.private == false
+    runs-on: macos-26
+    timeout-minutes: 20
+    env:
+      DERIVED_DATA: ${{ runner.temp }}/kiro-derived
+      KIROID_OUT: ${{ runner.temp }}/kiro-package
+    steps:
+      - name: Check out the reviewed source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+
+      - name: Show toolchain
+        run: |
+          xcodebuild -version
+          xcrun swift --version
+
+      - name: Compile app and Live Activity extension
+        shell: bash
+        run: |
+          set -euo pipefail
+          xcodebuild \
+            -project KiroIsland.xcodeproj \
+            -scheme KiroIsland \
+            -configuration Release \
+            -sdk iphoneos \
+            -destination 'generic/platform=iOS' \
+            -derivedDataPath "$DERIVED_DATA" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            build | tee "$RUNNER_TEMP/kiro-build.log"
+
+      - name: Package unsigned IPA and verify extension
+        run: python3 scripts/package_ipa.py "$DERIVED_DATA/Build/Products/Release-iphoneos/KiroIsland.app" "$KIROID_OUT"
+
+      - name: Save a draft release, without Actions artifact storage
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          release_tag="kiro-build-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          gh release create "$release_tag" \
+            "$KIROID_OUT/Kiro-Island-unsigned.ipa" \
+            "$KIROID_OUT/Kiro-Island-build.json" \
+            --repo "$GITHUB_REPOSITORY" \
+            --target "$GITHUB_SHA" \
+            --title "Kiro Island: iPhone build ${GITHUB_RUN_ID}" \
+            --notes-file scripts/release-notes.md \
+            --draft
+          echo "Unsigned IPA saved in the repository's draft release." >> "$GITHUB_STEP_SUMMARY"
+          echo "This job does not sign with an Apple Account or test on a physical device." >> "$GITHUB_STEP_SUMMARY"

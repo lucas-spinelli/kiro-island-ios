@@ -1,0 +1,12 @@
+.DS_Store
+DerivedData/
+build/
+Payload/
+*.ipa
+*.p12
+*.mobileprovision
+*.xcuserstate
+xcuserdata/
+__pycache__/
+.env*
+*.log
